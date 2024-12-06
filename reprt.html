@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Paragraph Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #684141;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: rgb(12, 5, 5);
+            padding: 10px  20px;
+            font-size: 20px;
+            position: relative;
+        }
+        .menu a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid indianred;
+            transition: 0.4s linear;
+        }
+        .menu a:hover:before{
+            width: 90%;
+        }
+        header{
+            width: 100%;
+            height: 10vh;
+            background-size: cover;
+            font-family: sans-serif;
+           
+        }
+        .nav{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: rgb(153, 82, 82);
+        }
+        .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
+        .menu a{
+            text-decoration: none;
+            color: rgb(12, 5, 5);
+            padding: 10px  20px;
+            font-size: 20px;
+            position: relative;
+        }
+        .menu a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid indianred;
+            transition: 0.4s linear;
+        }
+        .menu a:hover:before{
+            width: 90%;
+        }
+        .register a{
+            text-decoration: none;
+            color: rgb(246, 237, 237);
+            padding: 10px  20px;
+            font-size: 20px;
+            background: indianred;
+            border-radius: 8px;
+            transition: 0.4s;
+        }
+        .register a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+        }
+        h1{
+            color: #f2ecec;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                SMF
+            </div>
+            <br>  <h1>Welcome to our Simple Report Website</h1>
+            <div class="menu">
+                    <a href="index.html">View     </a>
+                    <a href="Home.html">Home</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="information.html">Information</a>
+                    <a href="serves.html">Services</a> 
+                    <a href="Book.html">Our collection</a>
+            </div>
+      
+            <div class="register">
+               <a href="reprt.html"> Report</a>
+            </div>
+        </nav>
+      
+    </header>
+
+    <section id="home">
+        <h2>Our Topic : Photography Portfolio</h2>
+        <p>Welcome to the home This website is designed to demonstrate basic HTML structure with paragraphs and a few sections.</p>
+        <p>The purpose of this site is to show how simple content can be structured using basic HTML elements.</p>
+    </section>
+
+    <section id="about">
+        <h2>Here is a list of the HTML tags and elements used in our project</h2>
+        <p><strong>Tags:</strong>
+            1.	<*!DOCTYPE html>
+            2.	<*html>
+            3.	<*head>
+            4.	<*meta>
+            5.	<.title>
+            6.	<.style>
+            7.	<.body>
+            8.	<.header>
+            9.	<.nav>
+            10.	<.div> <br>
+            11.	<.a>
+            12.	<.h1>
+            13.	<.p>
+            14.	<.main>
+            15.	<.section>
+            16.	<.img>
+            17.	<.strong>
+            18.	<.em>
+            19.	<.table>
+            20.	<.tr> <br>
+            21.	<.th>
+            22.	<.td>
+            23.	<.form>
+            24.	<.label>
+            25.	<.input>
+            26.	<.textarea>
+            27.	<.button>
+            28.	<.video>
+            29.	<.source>
+            30.	<.footer>
+        </p>
+        <p>  <strong> Elements:</strong> •	<strong>Text elements:</strong> <.h1>, <.p>, <.strong>, <.em>
+            •	<strong>Image elements:</strong> <.img>
+            •<br><strong>	Table elements:</strong> <.table>, <.tr>, <.th>, <.td>
+           •	<strong>Form elements:</strong> <.form>, <.label>, <.input>, <.textarea>, <.button>
+            <br>•	<strong>Video elements:</strong> <.video>, <.source>
+            	<strong>Navigation elements:</strong> <.nav>, <.a>, <.div>
+           <br> •	<strong>Container elements:</strong> <.header>, <.main>, <.section>, <.footer>, <.div>
+            <br>•	<strong>Metadata and document structure:</strong> <.!DOCTYPE html>, <.html>, <.head>, <.meta>, <.title>, <.style> </p>
+    </section>
+
+    <section id="contact">
+        <h2>Our experience using the online tool compared to coding in HTML</h2>
+        <p>If you would like to get in touch with us, please feel free to send an email. We are always happy to hear from you.</p>
+        <p>You can contact us through our official email address, which is available upon request.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Simple Paragraph Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Handjet", sans-serif;
+    font-size: 1.2rem;
+}
+.contienr{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(to right, #041308, #0b3317);
+}
+.lft_text{
+    flex-basis: 30%;
+}
+.gallery{
+    flex-basis: 50%;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 120px;
+}
+.heading{
+    color: #ddd;
+    margin-top: 10px;
+    text-align: center;
+}
+.subheading{
+    color: #ddd;
+    margin-top: 10px;
+    text-align: center;
+}
+.box{
+    background-size: cover;
+    background-position: top;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    background-blend-mode: hard-light;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+
+}
+.box:hover{
+    background-color: #999;
+    background-position: center;
+    box-shadow: 0 0 4px #fff;
+}
+ #box_1{
+    grid-row: span 2 / auto;
+} 
+ #box_2{
+    grid-column: span 2 / auto;
+ }
+ .menu a {
+    text-decoration: none;
+    color: rgb(12, 5, 5);
+    padding: 10px  20px;
+    font-size: 20px;
+    position: relative;
+}
+.menu a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.4s linear;
+}
+.menu a:hover:before{
+    width: 90%;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background-size: cover;
+    font-family: sans-serif;
+    position: fixed;
+}
+.nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(153, 82, 82);
+}
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(236, 226, 226);
+    padding: 10px  20px;
+    font-size: 20px;
+    position: relative;
+}
+.menu a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.4s linear;
+}
+.menu a:hover:before{
+    width: 90%;
+}
+.register a{
+    text-decoration: none;
+    color: rgb(246, 237, 237);
+    padding: 10px  20px;
+    font-size: 20px;
+    background: indianred;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+.register a:hover{
+    background: transparent;
+    border: 1px solid indianred;
+}
+</style>
+</head>
+<body>
+<header>
+    <nav class="nav">
+        <div class="logo">
+            SMF
+        </div>
+        <div class="menu">
+                <a href="index.html">View     </a>
+                <a href="Home.html">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="information.html">Information</a>
+                <a href="serves.html">Services</a> 
+                <a href="Book.html">Our collection</a>
+        </div>
+        <div class="register">
+           <a href="reprt.html"> Report</a>
+        </div>
+    </nav>
+</header>
+<!-- collection section  started hear -->
+<section>
+    <nav>
+    <div class="contienr">
+     <div class="lft_text">
+         <h1 class="heading">A simple example of our work</h1>
+         <p class="subheading">   A photography portfolio showcases a collection of stunning images captured by a photographer, highlighting their unique style, creativity, and technical skills."
+         <br><b>The images change when the mouse hovers over the image.</b></p>
+     </div>
+     <div class="gallery">
+         <div class="box " id="box_1" style="background-image: url(https://plus.unsplash.com/premium_photo-1673548917245-2c50c13a36fb?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjE3fHxib29rc3xlbnwwfHwwfHx8MA%3D%3D);">computer</div>
+         <div class="box " id="box_2"  style="background-image: url(https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNreXxlbnwwfHwwfHx8MA%3D%3D);">sky</div>
+         <div class="box" style="background-image: url(https://images.unsplash.com/photo-1445620466293-d6316372ab59?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D);">computer</div>
+         <div class="box" id="box_1"  style="background-image: url(https://images.unsplash.com/photo-1694719388506-7688a8eba70f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHN1biUyMHNoaW58ZW58MHx8MHx8fDA%3D);">sun shin</div>
+         <div class="box" id="box_2" style="background-image: url(https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXJ0fGVufDB8fDB8fHww);">art</div>
+         <div class="box" style="background-image: url(https://images.unsplash.com/photo-1460036521480-ff49c08c2781?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG11c2ljfGVufDB8fDB8fHww);">music</div>
+         <div class="box" id="box_2" style="background-image: url(https://media.istockphoto.com/id/1500129423/photo/moon-and-earth-moon-with-craters-in-deep-black-space-moonwalk-earth-at-night-elements-of-this.webp?a=1&b=1&s=612x612&w=0&k=20&c=hzio0pk9Zjc_cDCh-Cdl2k5Opyctg-ScrplAU2RcRHQ=);">Moon</div>
+     </div>
+ </nav></section>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#959797;
+        }
+         .navheadr {
+            text-align: center;
+            background-color:  #684141;
+            color: white;
+            padding: 1em 0;
+        } 
+        .menu a {
+            text-decoration: none;
+            color: rgb(12, 5, 5);
+            padding: 10px  20px;
+            font-size: 20px;
+            position: relative;
+        }
+        .menu a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid rgb(25, 19, 19);
+            transition: 0.4s linear;
+        }
+        .menu a:hover:before{
+            width: 90%;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .photo {
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .photo img {
+            max-width: 70%;
+            border-radius: 10px;
+        }
+        .photo p {
+            margin: 10px 0 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #684141;
+            color: white;
+            margin-top: 20px;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+        table th, table td {
+            border: 1px solid #100f0f;
+            padding: 10px;
+            text-align: center;
+            background-color: #684141;
+        }
+        .form-container {
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            margin: auto;
+            display: inline-block;
+        }
+        h2{
+            text-align: center;
+        }
+        menu a{
+            text-decoration: none;
+            color: rgb(12, 5, 5);
+            padding: 10px  20px;
+            font-size: 20px;
+            position: relative;
+        }
+        .menu a:bef.ore{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid indianred;
+            transition: 0.4s linear;
+        }
+        .menu a:hover:before{
+            width: 90%;
+        }
+        .nav{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: rgb(153, 82, 82);
+        }
+        .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
+        .menu a{
+            text-decoration: none;
+            color: rgb(12, 5, 5);
+            padding: 10px  20px;
+            font-size: 20px;
+            position: relative;
+        }
+        .menu a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid indianred;
+            transition: 0.4s linear;
+        }
+        .menu a:hover:before{
+            width: 90%;
+        }
+        .register a{
+            text-decoration: none;
+            color: rgb(246, 237, 237);
+            padding: 10px  20px;
+            font-size: 20px;
+            background: indianred;
+            border-radius: 8px;
+            transition: 0.4s;
+        }
+        .register a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                SMF
+            </div>
+            <div class="menu">
+                <a href="index.html">View     </a>
+                <a href="Home.html">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="information.html">Information</a>
+                <a href="serves.html">Services</a> 
+                <a href="Book.html">Our collection</a>
+            </div>
+            <div class="register">
+               <a href="reprt.html"> Report</a>
+            </div>
+        </nav>
+        <nav class="navheadr ">
+            <h1>My Photography Portfolio</h1>
+            <p>Welcome to my gallery of memories!</p>
+        </nav>
+       
+    </header>
+
+    <main>
+        <section class="gallery">
+            <div class="photo">
+                <img src="IMG_7937.JPG" alt="A serene landscape">
+                <p><strong>Serene Landscape</strong></p>
+                <p><em>Captured during my trip to the mountains.</em></p>
+            </div>
+            <div class="photo">
+                <img src="IMG_7942.JPG" alt="A bustling city street">
+                <p><strong>Bustling City Street</strong></p>
+                <p><em>This photo tells the story of urban life.</em></p>
+            </div>
+            <div class="photo">
+                <img src="IMG_7940.JPG" alt="A vibrant sunset">
+                <p><strong>Vibrant Sunset</strong></p>
+                <p><em>The beauty of nature in its full glory.</em></p>
+            </div>
+        </section>
+
+        <section>
+            <br>
+            <h2>Photo Highlights</h2>
+            <br>
+            <table>
+                <tr>
+                    <th>Photo</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Serene Landscape</td>
+                    <td>Captured during my trip to the mountains.</td>
+                </tr>
+                <tr>
+                    <td>Bustling City Street</td>
+                    <td>This photo tells the story of urban life.</td>
+                </tr>
+                <tr>
+                    <td>Vibrant Sunset</td>
+                    <td>The beauty of nature in its full glory.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="form-container">
+            <h2>Order Your Style</h2>
+            <p>If you want to order your style in  our photography, fill out the form below:</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="30" required></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Video Highlights</h2>
+            <video controls width="500"
+            >
+                <source src="highlight.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; For more information contact with us</p>
+    </footer>
+  
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Studio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#959797;
+            color: #333;
+        }
+        /* Header Styles */
+        .menu a {
+            text-decoration: none;
+            color: rgb(12, 5, 5);
+            padding: 10px  20px;
+            font-size: 20px;
+            position: relative;
+        }
+        .menu a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid indianred;
+            transition: 0.4s linear;
+        }
+        .menu a:hover:before{
+            width: 90%;
+        }
+        header{
+            width: 100%;
+            height: 10vh;
+            background-size: cover;
+            font-family: sans-serif;
+        }
+        .nav{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: rgb(153, 82, 82);
+        }
+       
+        .menu a{
+            text-decoration: none;
+            color: rgb(12, 5, 5);
+            padding: 10px  20px;
+            font-size: 20px;
+            position: relative;
+        }
+        .menu a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid indianred;
+            transition: 0.4s linear;
+        }
+        .menu a:hover:before{
+            width: 90%;
+        }
+        .register a{
+            text-decoration: none;
+            color: rgb(246, 237, 237);
+            padding: 10px  20px;
+            font-size: 20px;
+            background: indianred;
+            border-radius: 8px;
+            transition: 0.4s;
+        }
+        .register a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+        }
+        /* Section Styles */
+        section {
+            padding: 20px;
+            margin: 1px auto;
+            max-width: 1100px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        #information{
+                text-align: center;
+                color: #160702;
+            }
+        #information h2 {
+            color: #fdfaf9;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            background: #773b3b;
+        }
+        /* Services Section */
+        .services-list {
+            list-style: none;
+            padding-left: 0;
+            color: #000;
+        }
+
+        .services-list li {
+            font-size: 1.1rem;
+            margin: 12px 0;
+            padding: 10px;
+            background-color: #a59b9b;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(201, 97, 97, 0.05);
+        }
+        .services-list li strong {
+            color: #804129;
+        }
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #975642;
+            color: #ecf0f1;
+            font-size: 1rem;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+        </div>
+         <nav class="nav">
+            <div class="menu">
+                <a href="index.html">View     </a>
+                <a href="Home.html">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="information.html">Information</a>
+                <a href="serves.html">Services</a> 
+                <a href="Book.html">Our collection</a>
+            </div>
+            <div class="register">
+               <a href="reprt.html"> Report</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Information Section -->
+    <section id="information">
+        <h2> <hr>About Photography</h2>
+        <p class="info-content">
+            Photography is the art of capturing light with a camera to create images. Whether it's the 
+            technical aspects of shutter speed and aperture, or the creative expression behind capturing a 
+            fleeting moment, photography has the power to tell stories, preserve memories, and convey emotions. 
+            Over the years, photography has evolved from film to digital, opening up new possibilities for photographers
+            to explore.
+        </p>
+        <p class="info-content">
+            Professional photographers use advanced cameras, lenses, and editing software to create stunning images 
+            that can be used in various fields, including fashion, journalism, advertising, and portraiture. Whether 
+            capturing the grandeur of landscapes or the intimacy of a personal portrait, photography continues to 
+            be an essential medium for both art and communication.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Photography Services</h2>
+        <p class="info-content">
+            We offer a wide range of photography services designed to meet your needs. Whether you are looking for 
+            professional portraits, event coverage, or product photography, our team has the experience and skills to 
+            deliver exceptional results.
+        </p>
+        <h3>Our Services Include:</h3>
+        <ul class="services-list">
+            <li><strong>Portrait Photography:</strong> High-quality photos for individuals, families, and corporate profiles.</li>
+            <li><strong>Event Photography:</strong> Capturing special moments at weddings, parties, conferences, and more.</li>
+            <li><strong>Product Photography:</strong> Perfect for e-commerce businesses needing high-resolution images for products.</li>
+            <li><strong>Real Estate Photography:</strong> Showcasing properties with professional photos that highlight their best features.</li>
+            <li><strong>Commercial Photography:</strong> Tailored services for advertising campaigns, brand promotions, and media use.</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2024 Photography Studio | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
